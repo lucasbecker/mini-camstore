@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini CamStore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <img alt="Logo Mini CamStore" src="./images/logo.png" />
+      <ul>
+        <li><button onclick="filter('analogic')">Analógicas</button></li>
+        <li><button onclick="filter('digital')">Digitais</button></li>
+        <li><button onclick="filter('all')">Todas</button></li>
+        <li><button onclick="showCart()"> Carrinho</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="products"></div>
+    <div id="cart"></div>
+  </main>
+  <footer>
+    <p><span id="year"></span> © Desenvolvido por Lucas Becker. </p>
+  </footer>
+
+  <script src="./javascripts/script.js"></script>
+</body>
+</html>
